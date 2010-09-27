@@ -1,0 +1,4 @@
+#define twopane_width 8
+#define twopane_height 8
+static unsigned char twopane_bits[] = {
+   0x77, 0x77, 0x77, 0x77, 0x77, 0x77, 0x77, 0x77 };

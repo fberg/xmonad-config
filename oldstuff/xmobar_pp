@@ -1,0 +1,61 @@
+-- for XMOBAR
+
+--myLogHook h = dynamicLogWithPP $ oxyPP h 
+ 
+ --oxyPP :: Handle -> PP
+ --oxyPP h = defaultPP  { ppCurrent = wrap "<fc=#2c2c32,aquamarine3> " " </fc>" 
+ --                     , ppSep     = ""
+ --                     , ppWsSep = ""
+ --                     , ppVisible = wrap "<fc=#2c2c32,DarkSlateGray4> " " </fc>" 
+ --                     , ppLayout = \x -> "<fc=aquamarine2,#2c2c32> "
+ --                                  ++ case x of
+ ----                                       "Mirror ResizableTall"   -> "Tiled-"
+ ----                                       "ResizableTall"          -> "Tiled|"
+ ----                                       "Tabbed Bottom Simplest" -> "Tabbed"
+ ----                                       "Tabbed Simplest"        -> "Tabbed"
+ --                                       _                        -> x
+ --                                  ++ "</fc> "
+ --                     , ppTitle = \x -> case length x of
+ --                                         0 -> ""
+ --                                         _ -> "<fc=DarkSlateGray3,#2c2c32>[" ++ shorten 90 x ++ "]</fc>"
+ --                     , ppHiddenNoWindows = wrap "<fc=#aaa,#2c2c32> " " </fc>"
+ --                     , ppHidden = wrap "<fc=#eee,#2c2c32> " " </fc>"
+ --                     , ppOutput = System.IO.UTF8.hPutStrLn h
+ --                     }
+ -- 
+ --shorten :: Int -> String -> String
+ --shorten n xs | length xs < n = xs
+ --             | otherwise     = (take (n - length end) xs) ++ end
+ -- where
+ --    end = "…"
+
+
+
+ -- some other xmobar pp
+
+-- myPP :: Handle -> PP
+-- myPP h = defaultPP  { ppCurrent = wrap ("<fc=" ++ myActiveTextColor ++ "," ++ myActiveColor ++ "> ") " </fc>" 
+-- 		    , ppSep     = ""
+-- 		    , ppWsSep = ""
+-- 		    , ppVisible = wrap ("<fc=" ++ myInactiveTextColor ++ "," ++ myInactiveColor ++ "> ") "</fc>" 
+-- 	i	    , ppLayout = \x -> "<fc=aquamarine2,#2c2c32> "
+-- 				++ case x of
+-- --                                       "Mirror ResizableTall"   -> "Tiled-"
+-- --                                       "ResizableTall"          -> "Tiled|"
+-- --                                       "Tabbed Bottom Simplest" -> "Tabbed"
+-- --                                       "Tabbed Simplest"        -> "Tabbed"
+-- 				      _                        -> x
+-- 				++ "</fc> "
+-- 		    , ppTitle = \x -> case length x of
+-- 					0 -> ""
+-- 					_ -> "<fc=DarkSlateGray3,#2c2c32>[" ++ shorten 90 x ++ "]</fc>"
+-- -- 		    , ppHiddenNoWindows = wrap "" ""
+-- 		    , ppHidden = wrap "<fc=#eee,#2c2c32> " " </fc>"
+-- 		    , ppOutput = System.IO.UTF8.hPutStrLn h
+-- 		    }
+-- 
+-- shorten :: Int -> String -> String
+-- shorten n xs | length xs < n = xs
+-- 	    | otherwise     = (take (n - length end) xs) ++ end
+-- 	  where
+-- 	    end = "…"

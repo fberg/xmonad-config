@@ -1,0 +1,4 @@
+#define horizontal_tiles_width 8
+#define horizontal_tiles_height 8
+static unsigned char horizontal_tiles_bits[] = {
+   0xff, 0xff, 0xff, 0xff, 0x00, 0xdb, 0xdb, 0xdb };

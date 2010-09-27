@@ -1,0 +1,38 @@
+Introduction
+----------------------------------
+This is my up-to-date xmonad configuration file (xmonad.hs).
+
+Installation
+----------------------------------
+Copy xmonad.hs to your $HOME/.xmonad directory; the icons directory goes some-
+where on your disk (I keep it at ~/.xmonad/icons).
+
+You'll probably want to adjust some settings in the top part of xmonad.hs,
+especially icon path and font/color settings. Also set your terminal emulator
+and favorite programs there.
+
+The 'oldstuff' directory contains older code snippets and color themes.
+
+Dependencies
+----------------------------------
+# xmonad & xmonad-contrib >= 0.9 (haven't tried pre-0.9 with the newest config)
+# dzen
+# dmenu (for dmenu_run; you can use another program launcher too, e.g. 
+         XMonad.Prompt.Shell which is bound to M-S-p in this config)
+
+Notes
+----------------------------------
+Please note that my Haskell skills are pretty much non-existent and that this
+configuration file is more or less composed of stuff I've found at [1] or else-
+where on the web and adapted/personalized. The people who created these configs
+deserve the real credit. :P
+
+The icons are mostly from sm4tik's icon theme (see [2]) with the addition of a
+few self-made icons to indicate the current tiling algorithm.
+
+License
+----------------------------------
+See LICENSE file for details.
+
+[1] http://www.haskell.org/haskellwiki/Xmonad/Config_archive
+[2] http://dzen.geekmode.org/dwiki/doku.php?id=dzen:icon-packs

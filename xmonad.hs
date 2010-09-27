@@ -127,7 +127,7 @@ myGSApps        =
 
 myStatusXS      = "1" -- Xinerama screen
 
-myIconPath      = "/home/frank/.dzen2/icons/"
+myIconPath      = "/home/frank/.xmonad/icons/"
 
 myFocusFollowsMouse :: Bool
 myFocusFollowsMouse = True
